@@ -1,5 +1,7 @@
 # TheStandardModel-Experimental
-A testing ground for potential new features and implementations for The Standard Model
+A testing ground for potential new features and implementations for The Standard Model.
+
+**[`dbt docs`](https://thedatamaverick.github.io/TheStandardModel-Experimental/)**
 
 [![YAMLLint](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/yamllint.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/yamllint.yml)
 [![SQLFluff](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/sqlfluff.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/sqlfluff.yml)
