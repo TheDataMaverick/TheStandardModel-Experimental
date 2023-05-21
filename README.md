@@ -1,4 +1,4 @@
-# The Standard Model Experimental
+# The Standard Model - Experimental
 A testing ground for potential new features and implementations for The Standard Model.
 
 **[`dbt docs`](https://thedatamaverick.github.io/TheStandardModel-Experimental/)**
