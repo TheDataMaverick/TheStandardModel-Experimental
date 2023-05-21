@@ -62,3 +62,7 @@ DBT_SNOWFLAKE_THREADS: 16
 DBT_SNOWFLAKE_USER: github_action
 DBT_SNOWFLAKE_WAREHOUSE: dbt
 ```
+
+**Location of GitHub Action secrets and variables:**
+<img width="1208" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/6ee05fcf-cb3e-4290-a944-bb0749042abb">
+
