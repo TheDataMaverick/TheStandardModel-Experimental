@@ -15,12 +15,13 @@ jobs:
 
       - name: Read Python version
         id: python-version
-        run: echo "::set-output name=version::$(cat .python-version)"
+        #run: echo "::set-output name=version::$(cat .python-version)"
+        run: echo "python_version=3.11" >>  "$GITHUB_ENV"
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ steps.python-version.outputs.version }}
+          python-version: ${{ env.python_version }}
 
       - name: Install SQLFluff
         run: |
