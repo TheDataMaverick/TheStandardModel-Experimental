@@ -1,2 +1,64 @@
 # TheStandardModel-Experimental
 A testing ground for potential new features and implementations for The Standard Model
+
+## Setup Instructions
+
+### Development
+
+Create file `.dbt/profiles.yml` with the following content:
+
+```yaml
+maverick:
+  target: development
+  outputs:
+    development:
+      type: snowflake
+      account: <account> examples: xyz.europe-west4.gcp, xyz.eu-central-1
+      user: <user>
+      role: dbt
+      password: <user_password>
+      database: maverick
+      warehouse: dbt
+      schema: dev_<user>
+      threads: 16
+      client_session_keep_alive: false
+    production:
+      type: snowflake
+      account: <account> examples: xyz.europe-west4.gcp, xyz.eu-central-1
+      user: <user>
+      role: dbt
+      password: <user_password>
+      database: maverick
+      warehouse: dbt
+      schema: datawarehouse
+      threads: 16
+      client_session_keep_alive: false
+```
+
+Create file `.devcontainer/.env.gituser.zsh` with the following content:
+    
+```bash
+git config --global user.email "<email>"
+git config --global user.name "<name>"
+```
+
+### GitHub Action
+
+**Set the following secrets in the GitHub repository:**
+```
+DBT_SNOWFLAKE_ACCOUNT: <account> examples: xyz.europe-west4.gcp, xyz.eu-central-1
+DBT_SNOWFLAKE_PASSWORD: <github_action_password>
+```
+
+**Set the following variables in the GitHub repository:**
+
+```
+DBT_PROFILE_NAME: maverick
+DBT_PROJECT_FOLDER: maverick
+DBT_SNOWFLAKE_DATABASE: maverick
+DBT_SNOWFLAKE_PRODUCTION_SCHEMA: datawarehouse
+DBT_SNOWFLAKE_ROLE: dbt
+DBT_SNOWFLAKE_THREADS: 16
+DBT_SNOWFLAKE_USER: github_action
+DBT_SNOWFLAKE_WAREHOUSE: dbt
+```
