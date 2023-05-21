@@ -15,8 +15,7 @@ jobs:
 
       - name: Read Python version
         id: python-version
-        #run: echo "::set-output name=version::$(cat .python-version)"
-        run: echo "python_version=3.11" >>  "$GITHUB_ENV"
+        run: echo "python_version=$(cat .python-version)" >>  "$GITHUB_ENV"
 
       - name: Set up Python
         uses: actions/setup-python@v4
