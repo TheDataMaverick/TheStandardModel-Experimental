@@ -1,0 +1,7 @@
+{
+    // Sets 'scrollback' to 5000 lines in the integrated terminal. 'Scrollback' refers to the number
+    // of lines preserved in the terminal's history, allowing you to scroll back and view more past output.
+    // This can be especially helpful during debugging.
+    "terminal.integrated.scrollback": 5000,
+    "workbench.colorTheme": "Default Dark Modern"
+}

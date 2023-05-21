@@ -1,0 +1,16 @@
+name: 'maverick'
+config-version: 2
+
+profile: 'maverick'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+models:
+  maverick:
+    +materialized: table
