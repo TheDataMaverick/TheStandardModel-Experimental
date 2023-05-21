@@ -3,5 +3,8 @@
     // of lines preserved in the terminal's history, allowing you to scroll back and view more past output.
     // This can be especially helpful during debugging.
     "terminal.integrated.scrollback": 5000,
-    "workbench.colorTheme": "Default Dark Modern"
+    "workbench.colorTheme": "Default Dark Modern",
+    "[yaml]": {
+        "editor.tabSize": 2 // Sets the tab size to 2 spaces for YAML files (.yaml and .yml)
+    }
 }
