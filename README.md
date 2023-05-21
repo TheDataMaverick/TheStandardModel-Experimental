@@ -3,6 +3,37 @@ A testing ground for potential new features and implementations for The Standard
 
 ## Setup Instructions
 
+### Snowflake
+
+```sql
+use role useradmin;
+
+create role if not exists dbt comment = 'For dbt development and production';
+
+grant role dbt to role useradmin;
+
+grant role dbt to user <user>; -- do this for all developers
+
+create user if not exists github_action comment = 'For running dbt via GitHub Action';
+grant role dbt to user github_action;
+
+
+use role sysadmin;
+
+create or replace warehouse dbt 
+    comment = 'For dbt development and production' 
+    warehouse_size = 'x-small' 
+    auto_resume = true 
+    auto_suspend = 60;
+
+grant usage on warehouse dbt to role dbt;
+
+create database if not exists maverick;
+
+grant usage on database maverick to role dbt;
+grant create schema on database maverick to role dbt;
+```
+
 ### Development
 
 Create file `.dbt/profiles.yml` with the following content:
