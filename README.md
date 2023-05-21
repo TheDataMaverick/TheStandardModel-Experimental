@@ -1,6 +1,12 @@
 # TheStandardModel-Experimental
 A testing ground for potential new features and implementations for The Standard Model
 
+[![YAMLLint](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/yamllint.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/yamllint.yml)
+[![SQLFluff](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/sqlfluff.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/sqlfluff.yml)
+[![Deploy dbt models to Snowflake](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/dbt_deploy.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/dbt_deploy.yml)
+[![CI test new and modified models](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/dbt_ci.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/dbt_ci.yml)
+[![CD clean up and deploy to production](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/dbt_cd.yml/badge.svg)](https://github.com/TheDataMaverick/TheStandardModel-Experimental/actions/workflows/dbt_cd.yml)
+
 ## Setup Instructions
 
 ### Snowflake
