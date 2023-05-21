@@ -13,8 +13,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Read Python version
-        id: python-version
+      - name: Read Python version from .python-version
         run: echo "python_version=$(cat .python-version)" >>  "$GITHUB_ENV"
 
       - name: Set up Python

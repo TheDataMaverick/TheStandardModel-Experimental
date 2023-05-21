@@ -14,14 +14,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3
 
-      - name: Read Python version
-        id: python-version
-        run: echo "::set-output name=version::$(cat .python-version)"
+      - name: Read Python version from .python-version
+        run: echo "python_version=$(cat .python-version)" >>  "$GITHUB_ENV"
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ steps.python-version.outputs.version }}
+          python-version: ${{ env.python_version }}
 
       - name: Install yamllint
         run: |
