@@ -95,9 +95,16 @@ DBT_SNOWFLAKE_WAREHOUSE: dbt
 ```
 
 **Location of GitHub Action secrets and variables:**
+
 <img width="1208" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/6ee05fcf-cb3e-4290-a944-bb0749042abb">
 
 ### GitHub Pages
 
 **Enable GitHub Pages:**
+
 <img width="814" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/5fb72e7c-ccbd-451c-a586-928061ee3d88">
+
+**Remove rule:**
+
+<img width="1139" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/ae166a3e-ff75-4c92-ba87-1a0688d33f75">
+
