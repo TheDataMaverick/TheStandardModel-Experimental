@@ -6,5 +6,8 @@
     "workbench.colorTheme": "Default Dark Modern",
     "[yaml]": {
         "editor.tabSize": 2 // Sets the tab size to 2 spaces for YAML files (.yaml and .yml)
+    },
+    "[markdown]": {
+        "editor.wordWrap": "off"
     }
 }

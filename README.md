@@ -1,4 +1,5 @@
 # The Standard Model - Experimental
+
 A testing ground for potential new features and implementations for The Standard Model.
 
 **[`dbt docs`](https://thedatamaverick.github.io/TheStandardModel-Experimental/)**
@@ -75,7 +76,7 @@ maverick:
 ```
 
 Create file `.devcontainer/.env.gituser.zsh` with the following content:
-    
+
 ```bash
 git config --global user.email "<email>"
 git config --global user.name "<name>"
@@ -84,14 +85,15 @@ git config --global user.name "<name>"
 ### GitHub Action
 
 **Set the following secrets in the GitHub repository:**
-```
+
+```text
 DBT_SNOWFLAKE_ACCOUNT: <account> examples: xyz.europe-west4.gcp, xyz.eu-central-1
 DBT_SNOWFLAKE_PASSWORD: <github_action_password>
 ```
 
 **Set the following variables in the GitHub repository:**
 
-```
+```text
 DBT_PROFILE_NAME: maverick
 DBT_PROJECT_FOLDER: maverick
 DBT_SNOWFLAKE_DATABASE: maverick
@@ -104,15 +106,14 @@ DBT_SNOWFLAKE_WAREHOUSE: dbt
 
 **Location of GitHub Action secrets and variables:**
 
-<img width="1208" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/6ee05fcf-cb3e-4290-a944-bb0749042abb">
+![Location of GitHub Action secrets and variables:](https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/6ee05fcf-cb3e-4290-a944-bb0749042abb)
 
 ### GitHub Pages
 
 **Enable GitHub Pages:**
 
-<img width="814" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/5fb72e7c-ccbd-451c-a586-928061ee3d88">
+![Enable GitHub Pages](https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/5fb72e7c-ccbd-451c-a586-928061ee3d88)
 
 **Remove rule:**
 
-<img width="1139" alt="image" src="https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/ae166a3e-ff75-4c92-ba87-1a0688d33f75">
-
+![Remove rule](https://github.com/TheDataMaverick/TheStandardModel-Experimental/assets/7769335/ae166a3e-ff75-4c92-ba87-1a0688d33f75.png)
