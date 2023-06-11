@@ -21,6 +21,9 @@ env:
 
 jobs:
   initial_compile:
+    # dependabot does not have access to Github Action secrets
+    if: github.actor != 'dependabot[bot]'
+
     # For creating the initial manifest.json based on the branch before any commits are made
     name: Create initial manifest.json
 
@@ -116,6 +119,9 @@ jobs:
           path: ${{ vars.DBT_PROJECT_FOLDER }}/target/manifest.json
 
   dbt_build:
+    # dependabot does not have access to Github Action secrets
+    if: github.actor != 'dependabot[bot]'
+
     name: Test new and updated dbt models
     needs: initial_compile
 
